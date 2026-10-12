@@ -1,0 +1,16 @@
+{
+  "name": "ventas-ia-whatsapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Micro app para vender más por WhatsApp con IA (pequeños negocios de Latinoamérica).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:env": "node --env-file=.env server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=20.6" },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0"
+  }
+}

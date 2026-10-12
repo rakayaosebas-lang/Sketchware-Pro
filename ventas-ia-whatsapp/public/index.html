@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f9d58">
+  <title>Ventas IA WhatsApp</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icon.svg" alt="" width="28" height="28">
+      <div>
+        <strong id="bizName">Ventas IA</strong>
+        <small id="planBadge" class="badge">Gratis</small>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn" data-go="plan" aria-label="Planes">⭐</button>
+      <button class="icon-btn" data-go="settings" aria-label="Ajustes">⚙️</button>
+    </div>
+  </header>
+
+  <div id="demoBanner" class="demo-banner" hidden>
+    Modo demo: respuestas de ejemplo. Agrega tu ANTHROPIC_API_KEY en el servidor para activar la IA.
+  </div>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Navegación principal">
+    <button data-go="home" class="active"><span>🏠</span>Inicio</button>
+    <button data-go="reply"><span>💬</span>Responder</button>
+    <button data-go="sell"><span>💰</span>Vender</button>
+    <button data-go="clients"><span>👥</span>Clientes</button>
+    <button data-go="content"><span>📣</span>Contenido</button>
+  </nav>
+
+  <dialog id="modal"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

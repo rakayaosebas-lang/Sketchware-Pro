@@ -1,0 +1,11 @@
+{
+  "name": "Ventas IA WhatsApp",
+  "short_name": "Ventas IA",
+  "description": "Vende más por WhatsApp con inteligencia artificial.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8f7",
+  "theme_color": "#0f9d58",
+  "lang": "es",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
